@@ -4,12 +4,14 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
   <settings>
-  	<setting name="" value=""/>
+  	<setting name="mapUnderscoreToCamelCase" value="true"/>
   </settings>
+  
   <typeAliases>
-  	<package name="kr.ac.kopo.bookstore.model"/>
+  	<typeAlias type="kr.ac.kopo.bookstore.model.Book" alias="Book"/>
   </typeAliases>
+  
   <mappers>
-    
+  	<mapper resource="mybatis/book.xml"/>
   </mappers>
 </configuration>
